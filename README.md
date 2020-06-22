@@ -5,4 +5,4 @@
  
  
 ### Preview
-![watch](dorm_security2.mp4)
+[![watch the video](preview.png)](https://youtu.be/dFU8_TsuHvI)
