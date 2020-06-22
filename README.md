@@ -1,6 +1,8 @@
 # myroom
- I want to trigger and alarm when my door is opened and this application is running. or simply send me an email.
-
- # this is be a flask application eventually.
-
-
+ Detectron2 door openning detection. will expand it further with time.
+ 
+ - will currently segment a door and an oppening and send an email what state changes from closed to open.
+ 
+ 
+### Preview
+![watch](dorm_security2.mp4)
