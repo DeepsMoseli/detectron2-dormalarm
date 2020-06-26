@@ -13,7 +13,7 @@ path = os.getcwd()
 
 # We mostly care about the x and y coordinates of each region
 
-anno_file = "\..\door_196.json"
+anno_file = "\..\door_205.json"
 image_path = "C:/Users/Deeps/Documents/Personal ML/computer vision/dorm_alarm/myroom/images/"
 
 
@@ -44,7 +44,7 @@ def annotations_file(jsonfile):
 
 annotations = annotations_file(anno_file)
 
-with open( "dorm_annotations_2.pickle" , 'wb') as file:
+with open( "dorm_annotations_3.pickle" , 'wb') as file:
     pickle.dump(annotations,file, protocol=pickle.HIGHEST_PROTOCOL)
     file.close()
 
