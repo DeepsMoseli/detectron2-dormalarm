@@ -33,10 +33,10 @@ class Email_pypy:
     
         port = 465  # For SSL
         smtp_server = "smtp.gmail.com"
-        sender_email = "moselimotsoehli17@gmail.com"  # Enter your address
-        receiver_email = "moselim@hawaii.edu"  # Enter receiver address
-        subject = "incident report Johnson 114A"
-        password = "enwxawfobuibxeov"
+        sender_email = "your_gmail_address@gmail.com"  # Enter your address
+        receiver_email = "your_gmail_address@gmail.com"  # Enter receiver address
+        subject = "incident report"
+        password = "your_gmail_app_password"
         
         contents = {"From":sender_email,"To":receiver_email, "Subject": subject}
         # Create the plain-text message
