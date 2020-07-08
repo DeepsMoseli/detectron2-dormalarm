@@ -367,6 +367,15 @@ video.release()
 video_writer.release()
 cv2.destroyAllWindows()
 ```
+### Metrics
+
+#### Mean Average Precision
+By default, mask c-rnn measures performance in terms of Average precision. Average precision (AP) is a weighted average of the precision score at each confidence threshold, where the weights are calculated as the increase in recall from between thresholds. AP like AUC  both capture the area under the precision, recall curve but AP is more interpretable.
+
+#### Intersection over Union
+In segmentation and detection tasks, measuring performance is non-trivial, there are multiple tasks involved. Detection, classification, and segment mask prediction. Do we measure segmentation overlap, given classification performance, or do we assume the correct classes, and only measure the overlap of ground-truth, and prediction mask pixels? So if we take detected object classes, it is obvious that if the class labels are off w.r.t the true object label ID, then its bad performance, but what if there is an overlap? meaning correct class predictions for all objects in the image but we want to know how well we can locate whole objects in the image. 
+
+Intersection over Union (IoU)  measures the overlap of 2 regions in an image as a percentage of the total space they jointly occupy. The thresholds at which the precision is calculated is based on different IoU values, generation multiple ROC curves, and we eventually measure the mean average precision( mAP ), from all these curves.
 
 ### Preview
 Click on the image to watch the video.
