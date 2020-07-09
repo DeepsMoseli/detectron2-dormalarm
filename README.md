@@ -1,5 +1,5 @@
 # Doortectron2
-This work illustrates the use of Detectron2 on a custom dataset. While I worked on this project on data I can not yet share, I felt it important to share my experience with detectron2 so I quickly created a dataset of my own I could share(uncomfortably) so others struggle less with  the detectron library than I did.
+This work illustrates the use of Detectron2 on a custom dataset. While I worked on this project on data I can not share, I felt it important to share my experience with detectron2 so I quickly created a dataset of my own I could share(uncomfortably) so others struggle less with  the detectron library than I did.
  
 Detectron2 is a pytorch library form Facebook AI research (FAIR) that primarily re-implements state-of-the-art object object detection algorithms using maskrcnn. While looking at the demo notebook looks fairly straightforward, but Once I tried to use it on a custom labelled dataset, I realised it was harder than I expected. I will go thought the process of coco style annotating a custom dataset and eventually fine tuning a rcnn model for segmentation.  
 
